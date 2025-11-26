@@ -9,6 +9,9 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    com.illumio.app: attacker
+    com.illumio.role: evil
   name: netshoot
   namespace: netshoot
   labels:
